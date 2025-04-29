@@ -172,3 +172,70 @@ nav {
     border-color: var(--primary-color);
     background-color: var(--primary-color);
 }
+
+.menu {
+    position: relative;
+    isolation: isolate;
+}
+
+.menu::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: calc(50% - 450px);
+    background-color: #2a1d1c;
+    z-index: -1;
+}
+
+.menu__container .section__header {
+    margin-bottom: 1rem;
+}
+
+.menu__container a {
+    display: inline-block;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.menu__container a:hover {
+    color: var(--primary-color-dark);
+}
+
+.menu__grid {
+    display: grid;
+    gap: 2rem 1rem; 
+}
+
+.menu__card {
+    max-width: 300px;
+    margin-inline: auto;
+    box-shadow: 20px 5px 30px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.menu__card:hover {
+    transform: translateY(-1rem);
+}
+
+.menu__card__content {
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+.menu__card__content h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+}
+
+.menu__card__content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
