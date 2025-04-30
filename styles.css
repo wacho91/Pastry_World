@@ -458,3 +458,13 @@ footer {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+@media (width > 1024px) {
+    .menu__grid {
+        gap: 1.5rem;
+    }
+
+    .menu__card__content {
+        padding: 1.5rem;
+    }
+}
