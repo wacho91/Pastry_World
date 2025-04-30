@@ -364,3 +364,21 @@ footer {
     color: var(--white);
     text-align: center;
 }
+
+@media (width > 540px) {
+    .menu__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .book__container form {
+        padding: 1.5rem;
+    }
+
+    .book__container .input__row:not(:last-child) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
