@@ -293,3 +293,33 @@ nav {
     width: fit-content;
     margin-left: auto;
 }
+
+.about__container {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.about__image img {
+    max-width: 450px;
+    margin-inline: auto;
+}
+
+.about__content .section__header {
+    margin-bottom: 2rem;
+}
+
+.about__content > div {
+    padding-left: 2rem;
+    border-left: 2px solid var(--secondary-color);
+}
+
+.about__content p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    line-height: 1.75rem;
+}
+
+.about__btn {
+    margin-top: 2rem;
+}
