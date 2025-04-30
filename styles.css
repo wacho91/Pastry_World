@@ -323,3 +323,44 @@ nav {
 .about__btn {
     margin-top: 2rem;
 }
+
+footer {
+    background-color: var(--secondary-color);
+}
+
+.footer__container {
+    display: grid;
+    gap: 4rem 2rem;
+}
+
+.footer__logo img {
+    max-width: 150px;
+}
+
+.footer__col h4 {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.footer__links {
+    display: grid;
+    gap: 1rem;
+}
+
+.footer__links a {
+    font-weight: 500;
+    color: var(--extra-light);
+}
+
+.footer__links a:hover {
+    color: var(--primary-color);
+}
+
+.footer__bar {
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--white);
+    text-align: center;
+}
